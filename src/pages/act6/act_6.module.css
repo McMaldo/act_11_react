@@ -1,0 +1,35 @@
+h2.title{
+    margin-bottom: 20px;
+}
+section.card_list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    place-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+    article.card{
+        width: calc(25% - 15px);
+        min-width: 190px;
+        display: grid;
+        place-items: center;
+        padding: 1rem;
+        background: var(--bg-color-card);
+        border-radius:  10px;
+    }
+    article.card .id{
+        width: 100%;
+        color: var(--font-color-soft);
+    }
+    article.winner{
+        border: 2px solid green;
+        h3{
+            color: rgb(44, 220, 44);
+        }
+    }
+}
+@media (max-width: 600px) {
+    section.card_list article.card{
+        min-width: 170px;
+    }
+}

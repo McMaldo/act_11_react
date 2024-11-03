@@ -1,0 +1,80 @@
+.card_list{
+	width: 100%;
+	min-height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+	align-content: center;
+	justify-content: center;
+	padding: 1rem 0;
+	gap: 20px;
+}
+article.card{
+	width: 170px;
+	height: 250px;
+	border-radius: 20px;
+	padding: 10px 10px 30px 10px;
+	background: radial-gradient(circle, rgb(190, 140, 162) 0%, rgb(105, 129, 156) 100%);
+	box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+	text-shadow: 0 0 1rem rgb(103, 75, 87);
+	color: var(--font-color);
+	display: grid;
+	place-items: center;
+	transition: .3s ease-out;
+	position: relative;
+	.img_container{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		img{
+			width: 60%;
+			user-select: none;
+		}
+	}
+	.desc{
+		position: absolute;
+		bottom: .75rem;
+		height: 40px;
+		width: calc(100% - 20px);
+		display: flex;
+		padding: 5px;
+		justify-content: space-between;
+		.element{
+			display: flex;
+			flex-direction: column;
+			.value{
+				display: flex;
+				font-size: 75%;
+			}
+			.desc-name{
+				font-size: 60%;
+			}
+		}
+	}
+}
+article.card:hover{
+	transform: scale(1.02);
+}
+@font-face {
+	font-family: 'Material Icons Outlined';
+	font-style: normal;
+	font-weight: 400;
+	src: url(./gok-H7zzDkdnRel8-DQ6KAXJ69wP1tGnf4ZGhUce.woff2) format('woff2');
+}
+.icon{
+	font-family: 'Material Icons Outlined';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 16px;
+	line-height: 1;
+	letter-spacing: normal;
+	text-transform: none;
+	display: inline-block;
+	white-space: nowrap;
+	word-wrap: normal;
+	direction: ltr;
+	--webkit-font-feature-settings:  'liga';
+	--webkit-font-smoothing:  antialiased;
+	user-select: none;
+}

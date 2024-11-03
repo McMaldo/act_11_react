@@ -1,0 +1,105 @@
+header{
+  z-index: 9;
+  width: 100%;
+  height: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid var(--bg-color-nav);
+  box-shadow: 0 0 .5rem .25rem var(--bg-color);
+  padding: 1rem 2rem 0 2rem;
+}
+header .title_container,
+header .nav_container{
+  width: 100%;
+  height: 50%;
+  display: flex;
+}
+header .title_container{
+  align-items: center;
+  justify-content: flex-start;
+  color: var(--font-color-heading);
+  gap: .25rem;
+}
+header img{
+  width: 2rem;
+  aspect-ratio: 1 / 1;
+  user-select: none;
+}
+header .nav_container{
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+header nav{
+  width: 100%;
+  max-width: 500px;
+  height: 3rem;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  border-radius: .625rem .625rem 0 0;
+  background: var(--bg-color-nav);
+  padding: .25rem .25rem .125rem .25rem;
+  gap: .25rem;
+  user-select: none;
+}
+header nav a{
+  display: grid;
+  place-items: center;
+  background: inherit;
+  border-radius: .5rem;
+  transition: all .3s;
+  position: relative;
+  color: #cacdfd;
+}
+header nav a:hover{
+  background: #444;
+  color: #c6c9ff;
+}
+
+header nav a.active::after{
+  content: "";
+  width: 50%;
+  height: 3px;
+  background: var(--bg-color-active);
+  border-radius: 3px;
+  position: absolute;
+  bottom: 0;
+  left: 25%;
+  transition: all .2s;
+}
+header nav a.active:hover::after{
+  width: 80%;
+  left: 10%;
+}
+main{
+  width: 100%;
+  max-width: 1080px;
+  min-height: calc(100vh - 8rem);
+  max-height: calc(100vh - 8rem);
+  padding: 0 1rem 1rem 1rem;
+  overflow-y: scroll;
+}
+main::-webkit-scrollbar{
+  width: .75rem;
+  height: 100%;
+  position: absolute;
+  background: var(--bg-color-nav);
+  right: 0;
+}
+main::-webkit-scrollbar-thumb{
+  width: 100%;
+  background: var(--bg-color-active-soft);
+  border: 1px solid var(--bg-color-card);
+}
+@media (max-width: 550px) {
+  header{
+    padding: 1rem 0 0 0;
+  }
+  header .title_container{
+    padding: 0 2rem;
+  }
+  header .nav_container{
+    justify-content: center;
+  }
+}
