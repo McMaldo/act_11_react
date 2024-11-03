@@ -28,7 +28,7 @@ export default function Act_10() {
 	return (
 		<div className={s.card_list}>
       <input type='search' id='search' name='pokemon' onChange={HandleSearch} defaultValue="" placeholder='Search a Pokemon'/>
-		  {loading || Object.keys(data).length === 0 ? <img src='/loading.svg'/> : 
+		  {loading || Object.keys(data).length === 0 ? <img src='https://raw.githubusercontent.com/McMaldo/act_11_react/acdd214bfdeae61643a1101f93a65f931d97bcdc/loading.svg'/> : 
       <article className={s.pkm}>
 				<div className={s.pkm_desc}>
 					<span>

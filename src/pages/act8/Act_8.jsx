@@ -25,7 +25,7 @@ export default function Act_8() {
     <>
       <div className={s.heading}></div>
       <div className={s.card_list}>
-        {loading ? <img src='/loading.svg'/> :
+        {loading ? <img src='https://raw.githubusercontent.com/McMaldo/act_11_react/acdd214bfdeae61643a1101f93a65f931d97bcdc/loading.svg'/> :
         data ? data.results.map((e, eKey) => (
             <article id={e.id} className={s.card} key={eKey}>
               <h3>{e.name}</h3>

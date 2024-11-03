@@ -49,7 +49,7 @@ export default function Act_10_p2() {
         </div>
       </section>
       <section className={s.card_list}>
-        {loading ? <img src='/loading.svg'/> :
+        {loading ? <img src='https://raw.githubusercontent.com/McMaldo/act_11_react/acdd214bfdeae61643a1101f93a65f931d97bcdc/loading.svg'/> :
         data.items ? data.items.map((item, itemKey)=>(
           <article key={itemKey}>
             <div className={s.img_container}>

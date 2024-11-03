@@ -25,7 +25,7 @@ export default function Act_7_p2() {
 
 	return (
 		<div className={s.card_list}>
-		  	{loading ? <img src='/loading.svg'/> : 
+		  	{loading ? <img src='https://raw.githubusercontent.com/McMaldo/act_11_react/acdd214bfdeae61643a1101f93a65f931d97bcdc/loading.svg'/> : 
 			data ? <article className={s.pkm}>
 				<div className={s.pkm_desc}>
 					<span>
