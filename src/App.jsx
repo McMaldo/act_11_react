@@ -17,6 +17,7 @@ export default function App() {
     });
 	}
   useEffect(()=>{
+    setView("act6")
     initActiveLink();
   },[]);
 
@@ -30,13 +31,13 @@ export default function App() {
         </div>
         <div className='nav_container'>
           <nav>
-            <Link id='act6' to="/act6" className={view == "act6" ? "active" : ""} onClick={() => setView("act6")}>Act_6</Link>
-            <Link id='act7' to="/act7" className={view == "act7" ? "active" : ""} onClick={() => setView("act7")}>Act_7</Link>
-            <Link id='act7_p2' to="/act7_p2" className={view == "act7_p2" ? "active" : ""} onClick={() => setView("act7_p2")}>Act_7.2</Link>
-            <Link id='act8' to="/act8" className={view == "act8" ? "active" : ""} onClick={() => setView("act8")}>Act_8</Link>
-            <Link id='act9' to="/act9" className={view == "act9" ? "active" : ""} onClick={() => setView("act9")}>Act_9</Link>
-            <Link id='act10' to="/act10" className={view == "act10" ? "active" : ""} onClick={() => setView("act10")}>Act_10</Link>
-            <Link id='act10_p2' to="/act10_p2" className={view == "act10_p2" ? "active" : ""} onClick={() => setView("act10_p2")}>Act_10.2</Link>
+            <Link id='act6' to="act_11_react/act6" className={view == "act6" ? "active" : ""} onClick={() => setView("act6")}>Act_6</Link>
+            <Link id='act7' to="act_11_react/act7" className={view == "act7" ? "active" : ""} onClick={() => setView("act7")}>Act_7</Link>
+            <Link id='act7_p2' to="act_11_react/act7_p2" className={view == "act7_p2" ? "active" : ""} onClick={() => setView("act7_p2")}>Act_7.2</Link>
+            <Link id='act8' to="act_11_react/act8" className={view == "act8" ? "active" : ""} onClick={() => setView("act8")}>Act_8</Link>
+            <Link id='act9' to="act_11_react/act9" className={view == "act9" ? "active" : ""} onClick={() => setView("act9")}>Act_9</Link>
+            <Link id='act10' to="act_11_react/act10" className={view == "act10" ? "active" : ""} onClick={() => setView("act10")}>Act_10</Link>
+            <Link id='act10_p2' to="act_11_react/act10_p2" className={view == "act10_p2" ? "active" : ""} onClick={() => setView("act10_p2")}>Act_10.2</Link>
           </nav>
         </div>
       </header>

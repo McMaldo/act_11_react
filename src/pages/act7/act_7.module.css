@@ -1,11 +1,13 @@
 .card_list{
 	width: 100%;
+	min-height: 100%;
 	padding: 10px;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
-	gap: 10px;
+	text-align: center;
+	gap: 1rem;
 	article{
 		display: flex;
 		background: var(--bg-color-card);

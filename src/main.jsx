@@ -16,16 +16,16 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<App/>}>
-        <Route path="/" element={<Act_6/>}/>
-        <Route path="/act6" element={<Act_6/>}/>
-        <Route path="/act7" element={<Act_7/>}/>
-        <Route path="/act7_p2" element={<Act_7_p2/>}/>
-        <Route path="/act8" element={<Act_8/>}/>
-        <Route path="/act9" element={<Act_9/>}/>
-        <Route path="/act10" element={<Act_10/>}/>
-        <Route path="/act10_p2" element={<Act_10_p2/>}/>
-        <Route path='*' element={<Error/>}/>
+        <Route path="/act_11_react" element={<Act_6/>}/>
+        <Route path="/act_11_react/act6" element={<Act_6/>}/>
+        <Route path="/act_11_react/act7" element={<Act_7/>}/>
+        <Route path="/act_11_react/act7_p2" element={<Act_7_p2/>}/>
+        <Route path="/act_11_react/act8" element={<Act_8/>}/>
+        <Route path="/act_11_react/act9" element={<Act_9/>}/>
+        <Route path="/act_11_react/act10" element={<Act_10/>}/>
+        <Route path="/act_11_react/act10_p2" element={<Act_10_p2/>}/>
       </Route>
+      <Route path='*' element={<Error/>}/>
     </Routes>
   </BrowserRouter>
 )
