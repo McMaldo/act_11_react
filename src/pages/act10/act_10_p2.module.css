@@ -7,6 +7,7 @@
   padding: .5rem;
 }
 .heading img{
+  width: 100%;
   max-width: 380px;
 }
 .heading .desc{
@@ -35,8 +36,8 @@
   flex-wrap: wrap;
   place-content: center;
   place-items: center;
-  padding: 1rem;
-  gap: 1.5rem;
+  padding: 1rem 0;
+  gap: 1rem;
 }
 .card_list article{
   width: 17.5rem;
@@ -44,7 +45,7 @@
   flex-direction: column;
   background: var(--bg-color-card);
   border-radius: 0.5rem;
-  margin: 0.75rem;
+  margin: 0.75rem 0;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 .card_list article .img_container{
@@ -55,8 +56,6 @@
   background-size: cover;
   min-height: 350px;
   max-height: 350px;
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
 }
 .card_list article .img_container::after{
   content: "";
@@ -116,6 +115,7 @@
   height: 1.5rem;
   display: flex;
   justify-content: space-between;
+  text-wrap: nowrap;
 }
 .card_list article .data_more p,
 .card_list article .data_more span{
@@ -148,4 +148,12 @@
 .navigator button:hover{
   background-color: var(--bg-color-card-light);
   box-shadow: 0 0 .125rem .25rem var(--bg-color-card-dark);
+}
+@media(max-width: 620px){
+  .card_list{
+    gap: 1rem;
+  }
+  .card_list article{
+    width: calc(50% - .5rem);
+  }
 }

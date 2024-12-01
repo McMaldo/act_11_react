@@ -1,7 +1,7 @@
 .heading{
 	height: 100px;
-	width: calc(100% - 40px);
-	margin: 0 20px 10px 20px;
+	width: 100%;
+	margin-bottom: 10px;
 	display: grid;
 	place-items: center;
 	border-top: 0;
@@ -25,7 +25,7 @@
 	justify-content: center;
 	position: relative;
 	overflow: hidden;
-	gap: 1rem;
+	gap: 10px;
 	p,h3{
 		margin: 0;
 	}
@@ -76,9 +76,6 @@ article.card{
 			justify-content: space-between;
 			overflow: hidden;
 		}
-		.ep{
-			justify-content: start;
-		}
 		.epList{
 			height: fit-content;
 			overflow-x: scroll;
@@ -96,6 +93,16 @@ article.card{
 		::-webkit-scrollbar{
 			height: 0;
 			width: 0;
+		}
+	}
+}
+@media(max-width: 550px){
+	article.card{
+		width: calc(50% - 5px);
+		.container{
+			width: 300px;
+			max-width: 100%;
+			height: unset;
 		}
 	}
 }

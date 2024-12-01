@@ -39,7 +39,7 @@ export default function Act_8() {
                   <span><div>Dimension:</div><div>{e.origin.name.split(" ")[1]?e.origin.name.split(" ")[1].substring(1,e.origin.name.split(" ")[1].length-1):"unknown"}</div></span>
                 </div>
                 <div className={s.others}>
-                  <span className={s.ep}>Apariciones:</span>
+                  <span><div>Apariciones:</div><div>{"("+e.episode.length+")"}</div></span>
                   <span className={s.epList}>{e.episode.map((elem,elemKey)=>(<div key={elemKey}>{elem.split("/")[5]}</div>))}</span>
                   <span><div>Cargado:</div><div>{e.created.split("T")[0]}</div></span>
                 </div>
